@@ -11,20 +11,84 @@
     <title>Antonio Obregon</title>
   </head>
   <body>
-    <!-- As a link -->
+    <!-- Navbar -->
     <nav class="navbar navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">ANTONIO OBREGON</a>
         </div>
     </nav>
+
+    <!-- Hero -->
     <div id="hero" class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <img src="myProfilePicture.jpg">
         <h1 class="text-center mt-4">Antonio Obregón</h1>
-        <i class="fas fa-star fa-3x text-center mt-4"></i>
+        <div class="star my-3 d-flex flex-row align-items-center justify-content-center">
+            <hr class="m-0 p-0 mr-3">
+            <i class="fas fa-star fa-3x text-center"></i> 
+            <hr class="m-0 p-0 ml-3">
+        </div>
         <p class="text-center mt-4">Master en Admon. de TI by ITESM - COBITv5 - ITILv3 - CCNA</p>
     </div>
 
+    <!-- Portfolio -->
+    <div id="portfolio" class="container-fluid p-3">
+        
+        <h1 class="text-center mt-4">Certificaciones</h1>
+        
+        <div class="star my-3 d-flex flex-row align-items-center justify-content-center">
+            <hr class="m-0 p-0 mr-3">
+            <i class="fas fa-star fa-3x text-center"></i> 
+            <hr class="m-0 p-0 ml-3">
+        </div>
 
+        <div class="row d-flex justify-content-around">
+            <div class="col-12 col-md-6 col-lg-4 px-3 my-3">
+                <div class="project d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="iconfinder_HTML_Badge_65686.png">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 px-3 my-3">
+                <div class="project d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="iconfinder_css3_294692.png">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 px-3 my-3">
+                <div class="project d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="iconfinder_js_282802.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="container-fluid p-5">
+        <div class="row d-flex flex-column align-items-center justify-content-center">
+            <h1 class="col-12 text-center">Acerca de mi</h1>
+
+            <div class="star my-3 d-flex flex-row align-items-center justify-content-center">
+                <hr class="m-0 p-0 mr-3">
+                <i class="fas fa-star fa-3x text-center"></i> 
+                <hr class="m-0 p-0 ml-3">
+            </div>
+
+            <p class="col-12 text-left mt-3 px-5">
+                Antonio Obregón egreso de la Ingenieríe en Comunicaciones y Electronica del IPN.
+            </p>
+
+            <p class="col-12 text-left px-5">
+                Cuenta con 2 especialidades en servicios de TI y una maestria en administracion de TI por ITESM campus CEM.
+                Cuenta con 3 certificaciones industriales de CCNA, ITILv3 y COBITv5. Es un apasionado en temas de tecnologias de información, emprendimiento y mejores practicas. Practica los programas Lesmills Fitness para obtener salud y felicidad.
+                Es cristiano por convicción, con profundo amor a la familia, cree en las segundas oportunidades, trabaja para pagar su hipoteca social.
+            </p>
+            <a class="col-12 col-md-8 col-lg-5" href="https://github.com/JAntonioObregon" target="_blank">
+                <button type="button" class="btn btn-light col-12 mt-4">
+                    <i class="fab fa-github mr-1"></i>
+                    Visita mi GitHub
+                </button>
+            </a>
+        </div>
+    </div>
+    
     
         <!--<div class="container">
             <div class="row">
@@ -43,6 +107,7 @@
         </div>-->
         <style>
             @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
             .navbar{
                 background-color: #001011;
                 height: 106px;
@@ -69,18 +134,95 @@
             #hero h1{
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
-                color: #3AAFB9;
+                color: white;
                 font-size: 50px;
             }
             #hero p{
                 font-family: "Montserrat", sans-serif;
-                color: #3AAFB9;
+                color: white;
                 font-size: 25px;
             }
 
             #hero .fa-star{
                 color: #3AAFB9;
             }
+
+            #portfolio .project{
+                height: 250px;
+                background-color: lightgray;
+            }
+            
+            #portfolio .project img{
+                height: 200px;
+                width: auto;
+            }
+
+            #portfolio h1{
+                font-family: "Montserrat", sans-serif;
+                color: #3AAFB9;
+                font-weight: 700;
+            }
+
+            #hero .star hr{
+                width: 300px;
+                height: 5px;
+                background-color: white;
+            }
+
+            #hero .star .fa-star{
+                color: white;
+            }
+
+            #portfolio .star hr{
+                width: 300px;
+                height: 5px;
+                background-color: #3AAFB9;
+            }
+
+            #portfolio .star .fa-star{
+                color: #3AAFB9;
+            }
+
+            #about{
+                background-color: gray;
+                color:lightgray;
+            }
+            #about .star hr{
+                width: 100px;
+                height: 5px;
+                background-color: lightgray;
+            }
+
+            #about .star .fa-star{
+                color: lightgray;
+            }
+            
+            #about h1{
+                font-family: "Montserrat", sans-serif;
+                color: lightgray;
+                font-weight: 700;
+            }
+            #about p{
+                font-family: "Lato", sans-serif;
+                color: lightgray;
+                font-size: 20px;
+            }
+            #about button{
+                background-color: gray;
+                border: 2px solid lightgray;
+                color: lightgray;
+                font-family: "Lato", sans-serif;
+                font-size: 22px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            #about button:hover{
+                background-color: lightgray;
+                color:gray;
+            }
+            
+
             /*
             .container{
                 height: 200px;
